@@ -75,3 +75,9 @@ if [ "$RUNNER_OS" == "Windows" ]; then
   echo -e "\n${YELLOW}Make sure to set your default shell to bash when on Windows.${RESET}"
   echo -e "\n${YELLOW}See the github action docs for more information and examples.${RESET}"
 fi
+
+echo "environment variables:\n"
+printenv
+
+echo "pwd: $(pwd)"
+echo "ls -la: $(ls -l)"
